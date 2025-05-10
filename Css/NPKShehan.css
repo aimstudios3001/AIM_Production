@@ -1,0 +1,589 @@
+body, html{
+    color-scheme: dark black;
+    background-color: rgb(22, 22, 22);
+    margin: 0;
+    padding: 0;
+}
+
+.titleBar{
+    display: flex;
+    background-color: rgb(22, 22, 22);
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+    position: fixed;
+}
+
+.title1{
+    width: 100px;
+    padding: 15px;
+    background-color: rgb(22, 22, 22);
+    border: none;
+    cursor: pointer;
+    border-radius: 0%;
+    transition: .4s ease;
+    color: rgb(255, 72, 0);
+    font-size: 15px;
+}
+
+.title2{
+    width: 100px;
+    padding: 15px;
+    background-color: rgb(22, 22, 22);
+    border: none;
+    cursor: pointer;
+    border-radius: 0%;
+    transition: .4s ease;
+    color: rgb(255, 72, 0);
+    font-size: 15px;
+}
+
+.title3{
+    width: 100px;
+    padding: 15px;
+    background-color: rgb(22, 22, 22);
+    border: none;
+    cursor: pointer;
+    border-radius: 0%;
+    transition: .4s ease;
+    color: rgb(255, 72, 0);
+    font-size: 15px;
+}
+
+.title4{
+    width: 100px;
+    padding: 15px;
+    background-color: rgb(22, 22, 22);
+    border: none;
+    cursor: pointer;
+    border-radius: 0%;
+    transition: .4s ease;
+    color: rgb(255, 72, 0);
+    font-size: 15px;
+}
+
+.title5{
+    width: 100px;
+    padding: 15px;
+    background-color: rgb(22, 22, 22);
+    border: none;
+    cursor: pointer;
+    border-radius: 0%;
+    transition: .4s ease;
+    color: rgb(255, 72, 0);
+    font-size: 15px;
+}
+
+.title6{
+    width: 100px;
+    padding: 15px;
+    background-color: rgb(22, 22, 22);
+    border: none;
+    cursor: pointer;
+    border-radius: 0%;
+    transition: .4s ease;
+    color: rgb(255, 72, 0);
+    font-size: 15px;
+}
+
+.title7{
+    width: 100px;
+    padding: 15px;
+    background-color: rgb(22, 22, 22);
+    border: none;
+    cursor: pointer;
+    border-radius: 0%;
+    transition: .4s ease;
+    color: rgb(255, 72, 0);
+    font-size: 15px;
+}
+
+
+.title1:hover{
+    background-color: rgb(104, 104, 104);
+}
+
+.title1.active{
+    border-color: rgb(255, 72, 0);
+    border-left-width: 0px;
+    border-bottom-width: 2px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+}
+
+.title2:hover{
+    background-color: rgb(104, 104, 104);
+}
+
+.title2.active{
+    border-color: rgb(255, 72, 0);
+    border-left-width: 0px;
+    border-bottom-width: 2px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+}
+
+.title3:hover{
+    background-color: rgb(104, 104, 104);
+}
+
+.title3.active{
+    border-color: rgb(255, 72, 0);
+    border-left-width: 0px;
+    border-bottom-width: 2px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+}
+
+.title4:hover{
+    background-color: rgb(104, 104, 104);
+}
+
+.title4.active{
+    border-color: rgb(255, 72, 0);
+    border-left-width: 0px;
+    border-bottom-width: 2px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+}
+
+.title5:hover{
+    background-color: rgb(104, 104, 104);
+}
+
+.title5.active{
+    border-color: rgb(255, 72, 0);
+    border-left-width: 0px;
+    border-bottom-width: 2px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+}
+
+.title6:hover{
+    background-color: rgb(104, 104, 104);
+}
+
+.title6.active{
+    border-color: rgb(255, 72, 0);
+    border-left-width: 0px;
+    border-bottom-width: 2px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+}
+
+.title7:hover{
+    background-color: rgb(104, 104, 104);
+}
+
+.title7.active{
+    border-color: rgb(255, 72, 0);
+    border-left-width: 0px;
+    border-bottom-width: 2px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+}
+
+.MyImage{
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+p{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+b{
+    color: rgb(255, 72, 0);
+}
+
+i{
+    font-size: 15px;
+}
+
+.SummaryBox{
+    margin: 60px;
+    margin-top: 30px;
+    margin-bottom: 0%;
+}
+
+.about{
+    margin-top: 30px;
+    margin-bottom: 0%;
+    border-left-width: 2px;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 2px;
+    border-color: rgb(255, 72, 0);
+    border-style: solid;
+    padding: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    background-color: rgb(32, 32, 32);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.about.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about1{
+    margin-top: 30px;
+    margin-bottom: 0%;
+    border-left-width: 2px;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 2px;
+    border-color: rgb(255, 72, 0);
+    border-style: solid;
+    padding: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    background-color: rgb(32, 32, 32);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.about1.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about2{
+    margin-top: 30px;
+    margin-bottom: 0%;
+    border-left-width: 2px;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 2px;
+    border-color: rgb(255, 72, 0);
+    border-style: solid;
+    padding: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    background-color: rgb(32, 32, 32);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.about2.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about3{
+    margin-top: 30px;
+    margin-bottom: 0%;
+    border-left-width: 2px;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 2px;
+    border-color: rgb(255, 72, 0);
+    border-style: solid;
+    padding: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    background-color: rgb(32, 32, 32);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.about3.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about4{
+    margin-top: 30px;
+    margin-bottom: 0%;
+    border-left-width: 2px;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 2px;
+    border-color: rgb(255, 72, 0);
+    border-style: solid;
+    padding: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    background-color: rgb(32, 32, 32);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.about4.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h1{
+    color: rgb(255, 72, 0);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 35px;
+    margin-bottom: 0%;
+}
+
+.EsucationBox{
+    margin: 60px;
+    margin-top: 0px;
+    margin-bottom: 0%;
+}
+
+.workEx{
+    margin: 60px;
+    margin-top: 0px;
+    margin-bottom: 0%;
+}
+
+.edu, .edu1, .edu2, .edu3{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.edu.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.edu1.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.edu2.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.edu3.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.work, .work0{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.work.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.work0.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skillBox{
+    margin: 60px;
+    margin-top: 0px;
+    margin-bottom: 0%;
+}
+
+.CardBox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.Card{
+    margin: 20px;
+    margin-right: 22px;
+    padding: 15px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-top-width: 2px;
+    border-right-width: 0px;
+    border-color: rgb(255, 72, 0);
+    border-style: solid;
+    background-color: rgb(32, 32, 32);
+    border-radius: 15px;
+    width: 280px;
+    height: 220px;
+    transition: .4s ease;
+}
+
+.Card:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.CardName{
+    margin-bottom: 0%;
+}
+
+.CardDetsils{
+    font-size: 19px;
+}
+
+.priject{
+    margin: 60px;
+    margin-top: 0px;
+    margin-bottom: 0%;
+}
+
+.Logo1, .Logo2, .Logo3, .Logo4{
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.Logo1.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Logo2.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Logo3.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Logo4.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.ProBox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.ProName{
+    margin-bottom: 0%;
+}
+
+.ProBoxIner{
+    margin: 20px;
+    margin-right: 22px;
+    padding: 15px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-top-width: 2px;
+    border-right-width: 0px;
+    border-color: rgb(255, 72, 0);
+    border-style: solid;
+    background-color: rgb(32, 32, 32);
+    border-radius: 15px;
+    width: 280px;
+    height: 320px;
+    transition: .4s ease;
+}
+
+.ProBoxIner:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+a{
+    color: rgb(255, 72, 0);
+}
+
+hr{
+    color: white;
+}
+
+.contactBox{
+    margin: 60px;
+    margin-top: 0px;
+    margin-bottom: 0%;
+}
+
+.Email{
+    margin-bottom: 10px;
+}
+
+.Number{
+    margin-top: 0%;
+}
+
+.media{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.MediaBox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.Email, .Number, .Facebook, .youtube, .tiktok, .linkedin{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.Email.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Number.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Facebook.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.youtube.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tiktok.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.linkedin.show{
+    opacity: 1;
+    transform: translateY(0);
+}

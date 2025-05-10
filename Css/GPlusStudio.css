@@ -1,0 +1,408 @@
+body, html{
+    color-scheme: dark black;
+    background-color: rgb(22, 22, 22);
+    margin: 0;
+    padding: 0;
+}
+
+.titleBar{
+    display: flex;
+    background-color: rgb(22, 22, 22);
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+    position: fixed;
+}
+
+.title1, .title2, .title3, .title4{
+    width: 100px;
+    padding: 15px;
+    background-color: rgb(22, 22, 22);
+    border: none;
+    cursor: pointer;
+    border-radius: 0%;
+    transition: .4s ease;
+    color: rgb(61, 121, 2);
+    font-size: 15px;
+}
+
+.title1:hover{
+    background-color: rgb(104, 104, 104);
+}
+
+.title1.active{
+    border-color: rgb(61, 121, 2);
+    border-left-width: 0px;
+    border-bottom-width: 2px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+}
+
+.title2:hover{
+    background-color: rgb(104, 104, 104);
+}
+
+.title2.active{
+    border-color: rgb(61, 121, 2);
+    border-left-width: 0px;
+    border-bottom-width: 2px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+}
+
+.title3:hover{
+    background-color: rgb(104, 104, 104);
+}
+
+.title3.active{
+    border-color: rgb(61, 121, 2);
+    border-left-width: 0px;
+    border-bottom-width: 2px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+}
+
+.title4:hover{
+    background-color: rgb(104, 104, 104);
+}
+
+.title4.active{
+    border-color: rgb(61, 121, 2);
+    border-left-width: 0px;
+    border-bottom-width: 2px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+}
+
+#bac-video{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    height: 40%;
+}
+
+h1{
+    color: rgb(61, 121, 2);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 35px;
+    margin-bottom: 0%;
+}
+
+.aboutBox{
+    margin: 60px;
+    margin-top: 0px;
+    margin-bottom: 0%;
+}
+
+p{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+b{
+    color: rgb(61, 121, 2);
+}
+
+h2{
+    color: rgb(61, 121, 2);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 0%;
+}
+
+.about1, .about2, .about3, .about4, .about5, .about6, .about7, .about8{
+    margin-top: 30px;
+    margin-bottom: 0%;
+    border-left-width: 2px;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 2px;
+    border-color: rgb(61, 121, 2);
+    border-style: solid;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(32, 32, 32);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.about1.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about2.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about3.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about4.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about5.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about6.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about7.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about8.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.productBox{
+    margin: 60px;
+    margin-top: 0px;
+    margin-bottom: 0%;
+}
+
+.typePro{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    background-color: rgb(32, 32, 32);
+    margin-bottom: 20px;
+}
+
+.type, .type1, .type2, .type3, .type4{
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    margin: 0%;
+    background-color: rgb(32, 32, 32);
+    border: none;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.type:hover{
+    background-color: rgb(104, 104, 104);
+}
+
+.type.active{
+    border-color: rgb(61, 121, 2);
+    border-left-width: 0px;
+    border-bottom-width: 2px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+}
+
+.type1:hover{
+    background-color: rgb(104, 104, 104);
+}
+
+.type1.active{
+    border-color: rgb(61, 121, 2);
+    border-left-width: 0px;
+    border-bottom-width: 2px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+}
+
+.type2:hover{
+    background-color: rgb(104, 104, 104);
+}
+
+.type2.active{
+    border-color: rgb(61, 121, 2);
+    border-left-width: 0px;
+    border-bottom-width: 2px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+}
+
+.type3:hover{
+    background-color: rgb(104, 104, 104);
+}
+
+.type3.active{
+    border-color: rgb(61, 121, 2);
+    border-left-width: 0px;
+    border-bottom-width: 2px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+}
+
+.type4:hover{
+    background-color: rgb(104, 104, 104);
+}
+
+.type4.active{
+    border-color: rgb(61, 121, 2);
+    border-left-width: 0px;
+    border-bottom-width: 2px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+}
+
+.Images, .logo, .Packing, .Media, .Animation{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+.hidden{
+    display: none;
+}
+
+.img{
+    width: 280px;
+    border-radius: 15px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.video{
+    width: 400px;
+}
+
+.box{
+    margin: 20px;
+    margin-right: 22px;
+    padding: 15px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-top-width: 2px;
+    border-right-width: 0px;
+    border-color: rgb(61, 121, 2);
+    border-style: solid;
+    background-color: rgb(32, 32, 32);
+    border-radius: 15px;
+    width: 280px;
+    height: 550px;
+}
+
+.vBox, .aimateBox{
+    margin: 20px;
+    margin-right: 22px;
+    padding: 15px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-top-width: 2px;
+    border-right-width: 0px;
+    border-color: rgb(61, 121, 2);
+    border-style: solid;
+    background-color: rgb(32, 32, 32);
+    border-radius: 15px;
+    width: 400px;
+    height: 350x;
+}
+
+.contactBox{
+    margin: 60px;
+    margin-top: 0px;
+    margin-bottom: 0%;
+}
+
+.Email{
+    margin-bottom: 10px;
+}
+
+.Number{
+    margin-top: 0%;
+}
+
+.media{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.MediaBox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.Email, .Number, .Facebook, .youtube, .tiktok, .linkedin{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.Email.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Number.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Facebook.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.youtube.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tiktok.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.linkedin.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#fullscreenOverlay{
+    display:none; 
+    position:fixed; 
+    top:0; 
+    left:0; 
+    width:100vw; 
+    height:100vh; 
+    background-color:rgba(0,0,0,0.8); 
+    justify-content:center; 
+    align-items:center; 
+    z-index:9999;
+}
+
+#fullscreenImage{
+    max-width:90%; 
+    max-height:90%; 
+    border: 4px solid white; 
+    border-radius: 10px;
+}

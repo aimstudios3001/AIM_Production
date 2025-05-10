@@ -1,0 +1,255 @@
+body, html{
+    color-scheme: dark black;
+    background-color: rgb(12, 12, 12);
+    margin: 0;
+    padding: 0;
+
+}
+
+.logoBox{
+  width: 18%;
+  margin-top: 20px;
+}
+
+#bac-video{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.titleBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  top: 100%;
+  margin: 150px;
+  transition: .4s ease;
+}
+
+.titleBox:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+h1{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  font-size: 70px;
+  margin-bottom: 0%;
+}
+
+.About{
+  font-size: 35px;
+}
+
+p{
+  font-size: 19px;
+  color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 1%;
+}
+
+h3{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  margin-bottom: 0%;
+  margin-top: 0%;
+  font-size: 20px;
+}
+.secondCox{
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 1420px;
+}
+
+.inSecondBox{
+  margin: 40px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.aboutBox{
+  font-size: 20px;
+  margin-top: 3px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.GSLogo{
+  width: 6%;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.EasyLogo{
+  width: 6%;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.GamingLogo{
+  width: 6%;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.LogoAndTitle{
+  display: flex;
+}
+
+.title{
+  margin-left: 10px;
+  padding-top: 25px;
+  font-size: 30px;
+}
+
+.mainSubjectBox{
+  padding: 10px;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
+.sujectBox1{
+  margin: 40px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: rgb(255, 255, 255);
+  border-width: 1px;
+  padding: 20px;
+  background-color: rgb(37, 37, 37);
+  transition: .4s ease;
+  box-shadow: 0 0 3px rgb(255, 255, 255), 0 0 8px rgb(255, 255, 255);
+}
+
+.sujectBox1:hover{
+  border-color: rgb(61, 121, 2);
+  box-shadow: 0 0 5px rgb(61, 121, 2), 0 0 25px rgb(61, 121, 2);
+}
+
+.sujectBox2{
+  margin: 40px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: rgb(255, 255, 255);
+  border-width: 1px;
+  padding: 20px;
+  background-color: rgb(37, 37, 37);
+  transition: .4s ease;
+  box-shadow: 0 0 3px rgb(255, 255, 255), 0 0 8px rgb(255, 255, 255);
+}
+
+.sujectBox2:hover{
+  border-color: rgb(68, 2, 121);
+  box-shadow: 0 0 5px rgb(68, 2, 121), 0 0 25px rgb(68, 2, 121);
+}
+
+.sujectBox3{
+  margin: 40px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: rgb(255, 255, 255);
+  border-width: 1px;
+  padding: 20px;
+  background-color: rgb(37, 37, 37);
+  transition: .4s ease;
+  box-shadow: 0 0 3px rgb(255, 255, 255), 0 0 8px rgb(255, 255, 255);
+}
+
+.sujectBox3:hover{
+  border-color: rgb(136, 1, 1);
+  box-shadow: 0 0 5px rgb(136, 1, 1), 0 0 25px rgb(136, 1, 1);
+}
+
+.About3{
+  margin-bottom: 5px;
+}
+
+.About1{
+  margin-bottom: 5px;
+}
+
+.About2{
+  margin-bottom: 5px;
+}
+
+.aboutBox1{
+  margin: 40px;
+}
+
+.subLinkButton1{
+  padding: 10px 40px;
+  cursor: pointer;
+  width: 200px;
+  margin-top: 8px;
+  border-radius: 10px;
+  background-color: rgb(83, 83, 83);
+  transition: .4s ease;
+  border: none;
+}
+
+.subLinkButton1:hover{
+  background-color: rgb(61, 121, 2);
+  box-shadow: 0 0 3px rgb(61, 121, 2), 0 0 10px rgb(61, 121, 2);
+}
+
+.subLinkButton2{
+  padding: 10px 40px;
+  cursor: pointer;
+  width: 200px;
+  margin-top: 8px;
+  border-radius: 10px;
+  background-color: rgb(83, 83, 83);
+  transition: .4s ease;
+  border: none;
+}
+
+.subLinkButton2:hover{
+  background-color: rgb(68, 2, 121);
+  box-shadow: 0 0 3px rgb(68, 2, 121), 0 0 10px rgb(68, 2, 121);
+}
+
+.subLinkButton3{
+  padding: 10px 40px;
+  cursor: pointer;
+  width: 200px;
+  margin-top: 8px;
+  border-radius: 10px;
+  background-color: rgb(83, 83, 83);
+  transition: .4s ease;
+  border: none;
+}
+
+.subLinkButton3:hover{
+  background-color: rgb(136, 1, 1);
+  box-shadow: 0 0 3px rgb(136, 1, 1), 0 0 10px rgb(136, 1, 1);
+}
+
+.foterBox{
+  margin: 40px;
+  margin-top: 0%;
+  margin-bottom: 20px;
+}
+
+.foterName{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 47px;
+  margin-bottom: 0%;
+  margin-top: 0%;
+}
+
+a{
+  color: white;
+}
+
+.devName{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
