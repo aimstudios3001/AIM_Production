@@ -1,3 +1,48 @@
+// Data Load
+// Image Load
+  document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const src = el.getAttribute("data-src");
+          if (src) {
+            el.src = src;
+            if (el.tagName === 'VIDEO') {
+              el.load();
+            }
+            obs.unobserve(el);
+          }
+        }
+      });
+    });
+
+    document.querySelectorAll('[data-src]').forEach(el => {
+      observer.observe(el);
+    });
+  });
+
+  // Video Load
+  document.addEventListener("DOMContentLoaded", function () {
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const video = entry.target;
+        const source = video.querySelector('source[data-src]');
+        if (source && !source.src) {
+          source.src = source.getAttribute('data-src');
+          video.load(); // required to reload sources
+          obs.unobserve(video);
+        }
+      }
+    });
+  });
+
+  document.querySelectorAll('video').forEach(video => {
+    observer.observe(video);
+  });
+});
+
 // Auto scroll Animation
 // Home auto scroll Animation
 document.querySelector('.title1').addEventListener('click', function(){
@@ -8,7 +53,7 @@ document.querySelector('.title1').addEventListener('click', function(){
   this.classList.add('active');
 });
 
-// summary auto scroll Animation
+// About auto scroll Animation
 document.querySelector('.title2').addEventListener('click', function(){
   document.querySelector('.aboutBox').scrollIntoView({behavior:'smooth'});
 
@@ -17,7 +62,7 @@ document.querySelector('.title2').addEventListener('click', function(){
   this.classList.add('active');
 });
 
-// education auto scroll Animation
+// Project auto scroll Animation
 document.querySelector('.title3').addEventListener('click', function(){
   document.querySelector('.productBox').scrollIntoView({behavior:'smooth'});
 
@@ -26,7 +71,7 @@ document.querySelector('.title3').addEventListener('click', function(){
   this.classList.add('active');
 });
 
-// work auto scroll Animation
+// Contact auto scroll Animation
 document.querySelector('.title4').addEventListener('click', function(){
   document.querySelector('.contactBox').scrollIntoView({behavior:'smooth'});
 
@@ -320,6 +365,16 @@ window.addEventListener('scroll', function() {
 
   window.addEventListener('scroll', function() {
     const box = document.querySelector('.linkedin');
+    const boxTop = box.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (boxTop < windowHeight - 100) {
+      box.classList.add('show');
+    }
+  });
+
+  window.addEventListener('scroll', function() {
+    const box = document.querySelector('.whatsApp');
     const boxTop = box.getBoundingClientRect().top;
     const windowHeight = window.innerHeight;
 

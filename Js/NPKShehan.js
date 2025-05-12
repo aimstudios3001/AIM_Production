@@ -1,3 +1,48 @@
+// Data Load
+// Image Load
+  document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const src = el.getAttribute("data-src");
+          if (src) {
+            el.src = src;
+            if (el.tagName === 'VIDEO') {
+              el.load();
+            }
+            obs.unobserve(el);
+          }
+        }
+      });
+    });
+
+    document.querySelectorAll('[data-src]').forEach(el => {
+      observer.observe(el);
+    });
+  });
+
+  // Video Load
+  document.addEventListener("DOMContentLoaded", function () {
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const video = entry.target;
+        const source = video.querySelector('source[data-src]');
+        if (source && !source.src) {
+          source.src = source.getAttribute('data-src');
+          video.load(); // required to reload sources
+          obs.unobserve(video);
+        }
+      }
+    });
+  });
+
+  document.querySelectorAll('video').forEach(video => {
+    observer.observe(video);
+  });
+});
+
 // Scroll Animation
 // Summary scroll Animation
 window.addEventListener('scroll', function() {

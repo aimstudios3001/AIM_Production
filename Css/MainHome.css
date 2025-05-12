@@ -7,8 +7,10 @@ body, html{
 }
 
 .logoBox{
-  width: 18%;
+  width: 200px;
+  height: 200px;
   margin-top: 20px;
+  padding: 10px;
 }
 
 #bac-video{
@@ -26,6 +28,7 @@ body, html{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   position: relative;
   z-index: 1;
   top: 100%;
@@ -38,15 +41,18 @@ body, html{
   transition: 1s;
 }
 
+.titlePoint{
+  margin-top: 35px;
+  margin-bottom: 0%;
+  font-size: 35px;
+}
+
 h1{
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: white;
   font-size: 70px;
   margin-bottom: 0%;
-}
-
-.About{
-  font-size: 35px;
+  margin-top: 10px;
 }
 
 p{
@@ -72,9 +78,9 @@ h3{
 }
 
 .inSecondBox{
-  margin: 40px;
-  margin-bottom: 20px;
+  margin: 60px;
   margin-top: 0px;
+  margin-bottom: 0%;
 }
 
 .aboutBox{
@@ -83,31 +89,25 @@ h3{
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.GSLogo{
-  width: 6%;
-  border-radius: 20px;
-  margin: 10px;
-}
-
-.EasyLogo{
-  width: 6%;
-  border-radius: 20px;
-  margin: 10px;
-}
-
-.GamingLogo{
-  width: 6%;
-  border-radius: 20px;
+.GSLogo, .EasyLogo, .GamingLogo{
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
   margin: 10px;
 }
 
 .LogoAndTitle{
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .title{
   margin-left: 10px;
-  padding-top: 25px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-right: 0%;
   font-size: 30px;
 }
 
@@ -181,7 +181,7 @@ h3{
 }
 
 .aboutBox1{
-  margin: 40px;
+  margin: 60px;
 }
 
 .subLinkButton1{
@@ -232,15 +232,9 @@ h3{
   box-shadow: 0 0 3px rgb(136, 1, 1), 0 0 10px rgb(136, 1, 1);
 }
 
-.foterBox{
-  margin: 40px;
-  margin-top: 0%;
-  margin-bottom: 20px;
-}
-
 .foterName{
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 47px;
+  font-size: 25px;
   margin-bottom: 0%;
   margin-top: 0%;
 }
@@ -249,7 +243,93 @@ a{
   color: white;
 }
 
-.devName{
+.contactBox{
+    margin: 60px;
+    margin-top: 0px;
+    margin-bottom: 0%;
+}
+
+.foterName{
   margin-bottom: 10px;
-  margin-top: 10px;
+}
+
+.devName{
+  margin-top: 0%;
+  margin-bottom: 10px;
+}
+
+.Email{
+  margin-top: 0%;
+  margin-bottom: 10px;
+}
+
+.Number{
+    margin-top: 0%;
+}
+
+.media{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.MediaBox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.foterName, .devName, .Email, .Number, .Facebook, .youtube, .tiktok, .linkedin, .whatsApp{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.foterName.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.devName.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.Email.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Number.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Facebook.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.youtube.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tiktok.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.linkedin.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.whatsApp.show{
+  opacity: 1;
+  transform: translateY(0);
 }
