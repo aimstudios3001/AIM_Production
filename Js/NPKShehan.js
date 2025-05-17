@@ -43,6 +43,40 @@
   });
 });
 
+// Title Bar size Animation
+// Pc, Lap or Tab size
+function toggleMenu() {
+  const titleBar = document.getElementById("titleBar");
+  if (titleBar.style.display === "none" || titleBar.style.display === "") {
+    titleBar.style.display = "flex";
+    titleBar.style.flexDirection = "column";
+    titleBar.style.animation = "slideIn 0.3s ease";
+  } else {
+    titleBar.style.display = "none";
+  }
+}
+
+// Mobile size
+function updateLayout() {
+  const width = window.innerWidth;
+  const topBar = document.querySelector(".top-bar");
+  const titleBar = document.getElementById("titleBar");
+
+  if (width <= 767) {
+    topBar.style.display = "block";
+    titleBar.style.display = "none"; // hide by default on mobile
+  } else {
+    topBar.style.display = "none";
+    titleBar.style.display = "flex";
+    titleBar.style.flexDirection = "row";
+  }
+}
+
+// On load
+window.addEventListener("load", updateLayout);
+// On resize
+window.addEventListener("resize", updateLayout);
+
 // Scroll Animation
 // Summary scroll Animation
 window.addEventListener('scroll', function() {

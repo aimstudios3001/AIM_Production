@@ -8,11 +8,18 @@
     <link rel="stylesheet" href="Css/GPlusStudio.css">
 </head>
 <body>
-    <div class="titleBar">
-        <button type="button" class="title1"><b>Home</b></button>
-        <button type="button" class="title2"><b>About</b></button>
-        <button type="button" class="title3"><b>Project</b></button>
-        <button type="button" class="title4"><b>Contact</b></button>
+    <div class="Title">
+        <!-- Top bar containing menu icon -->
+        <div class="top-bar">
+            <button class="menu-icon" onclick="toggleMenu()">&#9776;</button>
+        </div>
+
+        <div class="titleBar" id="titleBar">
+            <button type="button" class="title1" id="buttonID"><b>Home</b></button>
+            <button type="button" class="title2" id="buttonID"><b>About</b></button>
+            <button type="button" class="title3" id="buttonID"><b>Project</b></button>
+            <button type="button" class="title4" id="buttonID"><b>Contact</b></button>
+        </div>
     </div>
 
     <video id="bac-video" muted loop autoplay>
