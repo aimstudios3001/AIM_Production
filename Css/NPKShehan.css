@@ -23,11 +23,6 @@ body, html{
     margin: 0%;
 }
 
-#buttonID {
-  width: 130px;
-  box-sizing: border-box;
-}
-
 .top-bar {
   display: none;
   width: 100px;

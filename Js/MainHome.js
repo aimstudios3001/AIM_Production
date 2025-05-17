@@ -76,7 +76,7 @@ function typeWriterAboutText(){
     if(index < aboutText.length){
         element.textContent += aboutText.charAt(index);
         index++;
-        setTimeout(typeWriterAboutText, 18); // Typing Speed
+        setTimeout(typeWriterAboutText, 10); // Typing Speed
     }
 }
 typeWriterAboutText();
@@ -87,7 +87,7 @@ function typeWriterLogoSubText(){
     if(index1 < logoSubText.length){
         element1.textContent += logoSubText.charAt(index1);
         index1++;
-        setTimeout(typeWriterLogoSubText, 90);  // Typing Speed
+        setTimeout(typeWriterLogoSubText, 50);  // Typing Speed
     }
 }
 typeWriterLogoSubText();
