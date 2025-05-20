@@ -1,8 +1,7 @@
 body, html{
-    color-scheme: dark black;
-    background-color: rgb(12, 12, 12);
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
 }
 
@@ -13,6 +12,16 @@ body, html{
   padding: 10px;
 }
 
+.blur{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  z-index: -1;
+}
+
 #bac-video{
   position: fixed;
   top: 0;
@@ -20,8 +29,9 @@ body, html{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 0;
+  z-index: -2;
   pointer-events: none;
+  opacity: 5px;
 }
 
 .titleBox{
@@ -32,7 +42,7 @@ body, html{
   position: relative;
   z-index: 1;
   top: 100%;
-  margin: 150px;
+  margin: 100px;
   transition: .4s ease;
 }
 
@@ -74,7 +84,7 @@ h3{
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 1420px;
+  height: auto;
 }
 
 .inSecondBox{
@@ -112,21 +122,45 @@ h3{
 }
 
 .mainSubjectBox{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
   padding: 10px;
   padding-top: 0%;
   padding-bottom: 0%;
 }
 
-.sujectBox1{
-  margin: 40px;
+.sujectBox1, .sujectBox2, .sujectBox3{
+  backdrop-filter: blur(50px);
+  width: 395px;
+  height: 280px;
+  margin: 30px;
+  margin-bottom: 10px;
   border-style: solid;
   border-radius: 20px;
   border-color: rgb(255, 255, 255);
   border-width: 1px;
   padding: 20px;
-  background-color: rgb(37, 37, 37);
   transition: .4s ease;
-  box-shadow: 0 0 3px rgb(255, 255, 255), 0 0 8px rgb(255, 255, 255);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+.sujectBox1.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sujectBox2.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sujectBox3.show{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .sujectBox1:hover{
@@ -134,33 +168,9 @@ h3{
   box-shadow: 0 0 5px rgb(61, 121, 2), 0 0 25px rgb(61, 121, 2);
 }
 
-.sujectBox2{
-  margin: 40px;
-  border-style: solid;
-  border-radius: 20px;
-  border-color: rgb(255, 255, 255);
-  border-width: 1px;
-  padding: 20px;
-  background-color: rgb(37, 37, 37);
-  transition: .4s ease;
-  box-shadow: 0 0 3px rgb(255, 255, 255), 0 0 8px rgb(255, 255, 255);
-}
-
 .sujectBox2:hover{
   border-color: rgb(68, 2, 121);
   box-shadow: 0 0 5px rgb(68, 2, 121), 0 0 25px rgb(68, 2, 121);
-}
-
-.sujectBox3{
-  margin: 40px;
-  border-style: solid;
-  border-radius: 20px;
-  border-color: rgb(255, 255, 255);
-  border-width: 1px;
-  padding: 20px;
-  background-color: rgb(37, 37, 37);
-  transition: .4s ease;
-  box-shadow: 0 0 3px rgb(255, 255, 255), 0 0 8px rgb(255, 255, 255);
 }
 
 .sujectBox3:hover{
@@ -186,6 +196,7 @@ h3{
 
 .subLinkButton1{
   padding: 10px 40px;
+  color: white;
   cursor: pointer;
   width: 200px;
   margin-top: 8px;
@@ -202,6 +213,7 @@ h3{
 
 .subLinkButton2{
   padding: 10px 40px;
+  color: white;
   cursor: pointer;
   width: 200px;
   margin-top: 8px;
@@ -218,6 +230,7 @@ h3{
 
 .subLinkButton3{
   padding: 10px 40px;
+  color: white;
   cursor: pointer;
   width: 200px;
   margin-top: 8px;

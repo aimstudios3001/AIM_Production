@@ -92,6 +92,38 @@ function typeWriterLogoSubText(){
 }
 typeWriterLogoSubText();
 
+// Scroll Animation
+// Subject scroll Animation
+window.addEventListener('scroll', function() {
+    const box = document.querySelector('.sujectBox1');
+    const boxTop = box.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (boxTop < windowHeight - 100) {
+      box.classList.add('show');
+    }
+  });
+
+  window.addEventListener('scroll', function() {
+    const box = document.querySelector('.sujectBox2');
+    const boxTop = box.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (boxTop < windowHeight - 100) {
+      box.classList.add('show');
+    }
+  });
+
+  window.addEventListener('scroll', function() {
+    const box = document.querySelector('.sujectBox3');
+    const boxTop = box.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (boxTop < windowHeight - 100) {
+      box.classList.add('show');
+    }
+  });
+
 // Contact scroll Animation
 window.addEventListener('scroll', function() {
     const box = document.querySelector('.foterName');
