@@ -134,7 +134,7 @@ h3{
 .sujectBox1, .sujectBox2, .sujectBox3{
   backdrop-filter: blur(50px);
   width: 395px;
-  height: 280px;
+  height: 300px;
   margin: 30px;
   margin-bottom: 10px;
   border-style: solid;
