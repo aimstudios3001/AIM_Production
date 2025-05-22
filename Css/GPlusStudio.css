@@ -215,18 +215,18 @@ h2{
     align-items: start;
     justify-content: start;
     flex-wrap: wrap;
-    background-color: rgb(32, 32, 32);
     margin-bottom: 20px;
 }
 
 .type, .type1, .type2, .type3, .type4{
     padding: 10px;
-    width: 150px;
-    height: 50px;
-    margin: 0%;
+    width: auto;
+    height: 40px;
+    margin: 5px;
     background-color: rgb(32, 32, 32);
     border: none;
     cursor: pointer;
+    border-radius: 10px;
     transition: .4s ease;
 }
 
@@ -235,12 +235,7 @@ h2{
 }
 
 .type.active{
-    border-color: rgb(61, 121, 2);
-    border-left-width: 0px;
-    border-bottom-width: 2px;
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-style: solid;
+    background-color: rgb(61, 121, 2);
 }
 
 .type1:hover{
@@ -248,12 +243,7 @@ h2{
 }
 
 .type1.active{
-    border-color: rgb(61, 121, 2);
-    border-left-width: 0px;
-    border-bottom-width: 2px;
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-style: solid;
+    background-color: rgb(61, 121, 2);
 }
 
 .type2:hover{
@@ -261,12 +251,7 @@ h2{
 }
 
 .type2.active{
-    border-color: rgb(61, 121, 2);
-    border-left-width: 0px;
-    border-bottom-width: 2px;
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-style: solid;
+    background-color: rgb(61, 121, 2);
 }
 
 .type3:hover{
@@ -274,12 +259,7 @@ h2{
 }
 
 .type3.active{
-    border-color: rgb(61, 121, 2);
-    border-left-width: 0px;
-    border-bottom-width: 2px;
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-style: solid;
+    background-color: rgb(61, 121, 2);
 }
 
 .type4:hover{
@@ -287,12 +267,7 @@ h2{
 }
 
 .type4.active{
-    border-color: rgb(61, 121, 2);
-    border-left-width: 0px;
-    border-bottom-width: 2px;
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-style: solid;
+    background-color: rgb(61, 121, 2);
 }
 
 .Images, .logo, .Packing, .Media, .Animation{

@@ -297,7 +297,7 @@ window.addEventListener('scroll', function() {
 // Auto scroll Animation
 // Home auto scroll Animation
 document.querySelector('.title1').addEventListener('click', function(){
-  document.querySelector('.MyImage').scrollIntoView({behavior:'smooth'});
+  document.querySelector('.logoBox').scrollIntoView({behavior:'smooth'});
 
   // Border color
   document.querySelectorAll('button').forEach(b => b.classList.remove('active'));

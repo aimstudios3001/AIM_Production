@@ -1,15 +1,86 @@
 body, html{
-    color-scheme: dark black;
-    background-color: rgb(22, 22, 22);
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.logoBox{
+  width: 350px;
+  height: 350px;
+  margin-top: 0px;
+  padding: 30px;
+  transition: .4s ease;
+}
+
+.logoBox:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.titleBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+  top: 100%;
+  margin: 0px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.Name{
+    font-size: 100px;
+    margin: 0%;
+    padding: 0%;
+}
+
+.NameSecond{
+    font-size: 60px;
+    margin: 0%;
+    padding: 0%;
+}
+
+.mainSubT{
+    font-size: 25px;
+    margin: 0%;
+    padding: 0%;
+}
+
+.mainSubT1{
+    margin-top: 10px;
+    padding: 0%;
+    width: 490px;
+}
+
+.blur{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(50px);
+  z-index: -1;
+}
+
+#bac-video{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  pointer-events: none;
+  opacity: 5px;
 }
 
 .Title {
     background-color: rgb(22, 22, 22);
     width: 100%;
     object-fit: cover;
-    z-index: 1;
+    z-index: 2;
     position: fixed;
     top: 0;
     left: 0;
@@ -249,20 +320,17 @@ i{
     margin-bottom: 0%;
 }
 
-.about{
+.about, .about1, .about2, .about3, .about4{
+    background-color: rgb(36, 36, 36);
     margin-top: 30px;
     margin-bottom: 0%;
-    border-left-width: 2px;
-    border-bottom-width: 0px;
-    border-top-width: 0px;
-    border-right-width: 2px;
+    border-width: 1px;
     border-color: rgb(255, 72, 0);
     border-style: solid;
     padding: 10px;
     padding-top: 2px;
     padding-bottom: 2px;
     border-radius: 10px;
-    background-color: rgb(32, 32, 32);
     opacity: 0;
     transform: translateY(50px);
     transition: all 0.6s ease-out;
@@ -273,47 +341,9 @@ i{
     transform: translateY(0);
 }
 
-.about1{
-    margin-top: 30px;
-    margin-bottom: 0%;
-    border-left-width: 2px;
-    border-bottom-width: 0px;
-    border-top-width: 0px;
-    border-right-width: 2px;
-    border-color: rgb(255, 72, 0);
-    border-style: solid;
-    padding: 10px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    border-radius: 10px;
-    background-color: rgb(32, 32, 32);
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 0.6s ease-out;
-}
-
 .about1.show{
     opacity: 1;
     transform: translateY(0);
-}
-
-.about2{
-    margin-top: 30px;
-    margin-bottom: 0%;
-    border-left-width: 2px;
-    border-bottom-width: 0px;
-    border-top-width: 0px;
-    border-right-width: 2px;
-    border-color: rgb(255, 72, 0);
-    border-style: solid;
-    padding: 10px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    border-radius: 10px;
-    background-color: rgb(32, 32, 32);
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 0.6s ease-out;
 }
 
 .about2.show{
@@ -321,47 +351,9 @@ i{
     transform: translateY(0);
 }
 
-.about3{
-    margin-top: 30px;
-    margin-bottom: 0%;
-    border-left-width: 2px;
-    border-bottom-width: 0px;
-    border-top-width: 0px;
-    border-right-width: 2px;
-    border-color: rgb(255, 72, 0);
-    border-style: solid;
-    padding: 10px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    border-radius: 10px;
-    background-color: rgb(32, 32, 32);
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 0.6s ease-out;
-}
-
 .about3.show{
     opacity: 1;
     transform: translateY(0);
-}
-
-.about4{
-    margin-top: 30px;
-    margin-bottom: 0%;
-    border-left-width: 2px;
-    border-bottom-width: 0px;
-    border-top-width: 0px;
-    border-right-width: 2px;
-    border-color: rgb(255, 72, 0);
-    border-style: solid;
-    padding: 10px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    border-radius: 10px;
-    background-color: rgb(32, 32, 32);
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 0.6s ease-out;
 }
 
 .about4.show{
@@ -445,16 +437,13 @@ h1{
 }
 
 .Card{
+    background-color: rgb(36, 36, 36);
     margin: 20px;
     margin-right: 22px;
     padding: 15px;
-    border-left-width: 0px;
-    border-bottom-width: 0px;
-    border-top-width: 2px;
-    border-right-width: 0px;
+    border-width: 1px;
     border-color: rgb(255, 72, 0);
     border-style: solid;
-    background-color: rgb(32, 32, 32);
     border-radius: 15px;
     width: 280px;
     height: 220px;
@@ -525,22 +514,38 @@ h1{
     margin: 20px;
     margin-right: 22px;
     padding: 15px;
-    border-left-width: 0px;
-    border-bottom-width: 0px;
-    border-top-width: 2px;
-    border-right-width: 0px;
+    border-width: 1px;
     border-color: rgb(255, 72, 0);
     border-style: solid;
     background-color: rgb(32, 32, 32);
     border-radius: 15px;
     width: 280px;
-    height: 320px;
+    height: auto;
     transition: .4s ease;
 }
 
 .ProBoxIner:hover{
     transform: scale(1.1);
     transition: 1s;
+}
+
+.ProButton{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 40px;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 35px;
+    border-radius: 10px;
+    background-color: rgb(83, 83, 83);
+    transition: .4s ease;
+    border: none;
+}
+
+.ProButton:hover{
+    background-color: rgb(255, 72, 0);
 }
 
 a{
