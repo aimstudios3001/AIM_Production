@@ -170,6 +170,147 @@ window.addEventListener('scroll', function() {
     }
   });
 
+  // Education result scroll Animation
+    window.addEventListener('scroll', function() {
+    const box = document.querySelector('.result');
+    const boxTop = box.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (boxTop < windowHeight - 100) {
+      box.classList.add('show');
+    }
+  });
+
+    window.addEventListener('scroll', function() {
+    const box = document.querySelector('.result0');
+    const boxTop = box.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (boxTop < windowHeight - 100) {
+      box.classList.add('show');
+    }
+  });
+
+  window.addEventListener('scroll', function() {
+    const box = document.querySelector('.result1');
+    const boxTop = box.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (boxTop < windowHeight - 100) {
+      box.classList.add('show');
+    }
+  });
+
+    window.addEventListener('scroll', function() {
+    const box = document.querySelector('.result2');
+    const boxTop = box.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (boxTop < windowHeight - 100) {
+      box.classList.add('show');
+    }
+  });
+
+    window.addEventListener('scroll', function() {
+    const box = document.querySelector('.result3');
+    const boxTop = box.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (boxTop < windowHeight - 100) {
+      box.classList.add('show');
+    }
+  });
+
+    window.addEventListener('scroll', function() {
+    const box = document.querySelector('.result4');
+    const boxTop = box.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (boxTop < windowHeight - 100) {
+      box.classList.add('show');
+    }
+  });
+
+    window.addEventListener('scroll', function() {
+    const box = document.querySelector('.result5');
+    const boxTop = box.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (boxTop < windowHeight - 100) {
+      box.classList.add('show');
+    }
+  });
+
+    window.addEventListener('scroll', function() {
+    const box = document.querySelector('.result6');
+    const boxTop = box.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (boxTop < windowHeight - 100) {
+      box.classList.add('show');
+    }
+  });
+
+    window.addEventListener('scroll', function() {
+    const box = document.querySelector('.result7');
+    const boxTop = box.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (boxTop < windowHeight - 100) {
+      box.classList.add('show');
+    }
+  });
+
+    window.addEventListener('scroll', function() {
+    const box = document.querySelector('.result8');
+    const boxTop = box.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (boxTop < windowHeight - 100) {
+      box.classList.add('show');
+    }
+  });
+
+    window.addEventListener('scroll', function() {
+    const box = document.querySelector('.result9');
+    const boxTop = box.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (boxTop < windowHeight - 100) {
+      box.classList.add('show');
+    }
+  });
+
+    window.addEventListener('scroll', function() {
+    const box = document.querySelector('.result10');
+    const boxTop = box.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (boxTop < windowHeight - 100) {
+      box.classList.add('show');
+    }
+  });
+
+    window.addEventListener('scroll', function() {
+    const box = document.querySelector('.result11');
+    const boxTop = box.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (boxTop < windowHeight - 100) {
+      box.classList.add('show');
+    }
+  });
+
+    window.addEventListener('scroll', function() {
+    const box = document.querySelector('.result12');
+    const boxTop = box.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (boxTop < windowHeight - 100) {
+      box.classList.add('show');
+    }
+  });
+
 // Work Experience scroll Animation
 window.addEventListener('scroll', function() {
     const box = document.querySelector('.work');

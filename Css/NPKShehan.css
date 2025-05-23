@@ -7,7 +7,7 @@ body, html{
 .logoBox{
   width: 350px;
   height: 350px;
-  margin-top: 0px;
+  margin: 0px;
   padding: 30px;
   transition: .4s ease;
 }
@@ -30,28 +30,20 @@ body, html{
   margin-bottom: 100px;
 }
 
-.Name{
-    font-size: 100px;
+.myPro{
+    width: 420px;
     margin: 0%;
-    padding: 0%;
 }
 
-.NameSecond{
-    font-size: 60px;
-    margin: 0%;
-    padding: 0%;
+.Fname{
+    font-size: 85px;
+    margin-bottom: 0%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.mainSubT{
-    font-size: 25px;
-    margin: 0%;
-    padding: 0%;
-}
-
-.mainSubT1{
-    margin-top: 10px;
-    padding: 0%;
-    width: 490px;
+.Lname{
+    font-size: 50px;
+    margin-top: 0%;
 }
 
 .blur{
@@ -406,6 +398,95 @@ h1{
     transform: translateY(0);
 }
 
+.resultBox{
+    display: block;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.result, .result0, .result1, .result2, .result3, .result4, .result5, .result6, .result7, .result8, .result9, .result10, .result11, .result12{
+    margin: 5px;
+    padding: 10px 30px;
+    background-color: rgb(36, 36, 36);
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    font-size: 15px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.result.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.result0.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.result1.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.result2.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.result3.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.result4.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.result5.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.result6.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.result7.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.result8.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.result9.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.result10.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.result11.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.result12.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .work, .work0{
     opacity: 0;
     transform: translateY(50px);
@@ -590,6 +671,7 @@ hr{
     opacity: 0;
     transform: translateY(50px);
     transition: all 0.6s ease-out;
+    transition: .4s ease;
 }
 
 .Email.show{
@@ -607,9 +689,19 @@ hr{
     transform: translateY(0);
 }
 
+.Facebook:hover{
+    transform: translateY(-20px);
+    transition: 1s;
+}
+
 .youtube.show{
     opacity: 1;
     transform: translateY(0);
+}
+
+.youtube:hover{
+    transform: translateY(-20px);
+    transition: 1s;
 }
 
 .tiktok.show{
@@ -617,7 +709,17 @@ hr{
     transform: translateY(0);
 }
 
+.tiktok:hover{
+    transform: translateY(-20px);
+    transition: 1s;
+}
+
 .linkedin.show{
     opacity: 1;
     transform: translateY(0);
+}
+
+.linkedin:hover{
+    transform: translateY(-20px);
+    transition: 1s;
 }

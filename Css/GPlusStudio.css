@@ -359,6 +359,7 @@ h2{
     opacity: 0;
     transform: translateY(50px);
     transition: all 0.6s ease-out;
+    transition: .4s ease;
 }
 
 .Email.show{
@@ -376,9 +377,19 @@ h2{
     transform: translateY(0);
 }
 
+.Facebook:hover{
+    transform: translateY(-20px);
+    transition: 1s;
+}
+
 .youtube.show{
     opacity: 1;
     transform: translateY(0);
+}
+
+.youtube:hover{
+    transform: translateY(-20px);
+    transition: 1s;
 }
 
 .tiktok.show{
@@ -386,14 +397,30 @@ h2{
     transform: translateY(0);
 }
 
+.tiktok:hover{
+    transform: translateY(-20px);
+    transition: 1s;
+}
+
+
 .linkedin.show{
     opacity: 1;
     transform: translateY(0);
 }
 
+.linkedin:hover{
+    transform: translateY(-20px);
+    transition: 1s;
+}
+
 .whatsApp.show{
   opacity: 1;
   transform: translateY(0);
+}
+
+.whatsApp:hover{
+    transform: translateY(-20px);
+    transition: 1s;
 }
 
 #fullscreenOverlay{
